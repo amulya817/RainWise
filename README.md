@@ -1,111 +1,80 @@
-# Rooftop Rainwater Harvesting (RTRWH) Assessment & Recommendation Engine
+🌧️ Rainwise — Rooftop Rainwater Harvesting (RTRWH) Assessment & Recommendation Engine
 
-A comprehensive web application designed to assess the feasibility of rainwater harvesting for any given location, providing detailed analysis, personalized recommendations, and information on government subsidies.
+A comprehensive web application designed to assess the feasibility of rooftop rainwater harvesting for any given location. It provides detailed analysis, personalized recommendations, and information on government subsidies, helping users make sustainable water management decisions with ease.
 
-![RTRWH Application Showcase](https://via.placeholder.com/800x400/1e293b/22d3ee?text=Project+Showcase+Image)
+🌿 Key Features
 
-## 🌟 Key Features
+Interactive Location Selection
+Users can pinpoint their property using an interactive MapTiler map with both street and satellite views or use their device’s GPS.
 
-- **Interactive Location Selection:** Users can pinpoint their property using an interactive map (powered by MapTiler) with both street and satellite views, or use their device's GPS.
-- **Multi-Step Data Collection:** A guided, multi-page form collects essential user, property, and water usage details for a precise assessment.
-- **Comprehensive Backend Analysis:** A powerful Flask backend performs detailed calculations for:
-  - **Feasibility:** Compares rainwater harvesting potential against household demand.
-  - **User Categorization:** Classifies the property into one of six distinct categories based on size, rainfall, and geological data.
-  - **Safety Checks:** Validates the safety of artificial groundwater recharge based on soil type, groundwater depth, and contamination risks.
-  - **Cost & Payback Analysis:** Provides estimated installation costs and calculates the financial payback period.
-  - **Purification Recommendations:** Suggests a water treatment sequence based on the user's intended use.
-- **Dynamic & Visual Reports:** The results are displayed on a beautifully designed, animated page featuring charts (via Chart.js) for easy comparison of supply vs. demand.
-- **PDF Report Generation:** Users can download a clean, text-based summary of their assessment report, generated on the backend with FPDF2.
-- **Government Subsidy Checker:** An integrated module that checks user eligibility for national and state-level rainwater harvesting schemes and regulations.
+Multi-Step Data Collection
+A guided, multi-page form collects essential details such as user info, property dimensions, and water usage for accurate analysis.
 
-## 📸 Screenshots
+Comprehensive Backend Analysis
+The Flask backend performs robust calculations for:
 
-*(Add screenshots of your application here to showcase the UI)*
+Feasibility Assessment – comparing rainwater harvesting potential vs. household demand.
 
-**1. Onboarding & Consent**
-![Onboarding Page](https://via.placeholder.com/400x250/1e293b/ffffff?text=Onboarding+Screen)
+User Categorization – classifying properties by area, rainfall data, and geological parameters.
 
-**2. Location & Data Input**
-![Data Input Page](https://via.placeholder.com/400x250/1e293b/ffffff?text=Data+Input+Screen)
+Safety Validation – verifying safety for artificial groundwater recharge.
 
-**3. Feasibility Report**
-![Results Page](https://via.placeholder.com/400x250/1e293b/ffffff?text=Results+Screen)
+Cost & Payback Analysis – estimating system cost and expected return period.
 
-**4. Subsidy Checker**
-![Subsidy Checker Page](https://via.placeholder.com/400x250/1e293b/ffffff?text=Subsidy+Checker)
+Purification Recommendations – suggesting optimal water treatment processes based on intended usage.
 
-## 🛠️ Technology Stack
+Dynamic Reports & Visualizations
+Animated, interactive results using Chart.js for clear and intuitive interpretation.
 
-- **Backend:**
-  - **Python 3**
-  - **Flask:** Micro web framework.
-  - **SQLAlchemy:** Database ORM for SQLite.
-  - **Pandas:** For processing location data from CSV.
-  - **FPDF2:** For server-side PDF generation.
-- **Frontend:**
-  - **HTML5**
-  - **CSS3** (with **Tailwind CSS**)
-  - **JavaScript (ES6+)**
-- **Mapping & Geocoding:**
-  - **MapLibre GL JS:** For the interactive map.
-  - **MapTiler:** For map tiles, geocoding, and reverse geocoding services.
-- **Data Visualization:**
-  - **Chart.js:** For creating dynamic charts on the results page.
+PDF Report Generation
+Downloadable, professional-quality reports generated with FPDF2.
 
-## ⚙️ Setup and Installation
+Government Subsidy Checker
+Automatically checks eligibility for relevant national/state rainwater harvesting schemes.
 
-Follow these steps to get the project running on your local machine.
+⚙️ Technology Stack
 
-### 1. Prerequisites
+Backend: Python 3, Flask, SQLAlchemy, Pandas, FPDF2
+Frontend: HTML5, CSS3 (Tailwind CSS), JavaScript (ES6+)
+Mapping & Geocoding: MapLibre GL JS, MapTiler
+Data Visualization: Chart.js
 
-- Python 3.8 or higher
-- `pip` (Python package installer)
+🚀 Setup and Installation
+1. Prerequisites
 
-### 2. Clone the Repository
+Python 3.8 or higher
 
-```bash
-git clone https://github.com/your-username/rtrwh-assessment-tool.git
-cd rtrwh-assessment-tool
-```
+pip (Python package installer)
 
-### 3. Set Up a Virtual Environment
+2. Clone the Repository
+git clone https://github.com/your-username/Rainwise.git
+cd Rainwise
 
-It's highly recommended to use a virtual environment to manage project dependencies.
+3. Create a Virtual Environment
 
-```bash
-# For Windows
+Windows
+
 python -m venv venv
 venv\Scripts\activate
 
-# For macOS/Linux
+
+macOS/Linux
+
 python3 -m venv venv
 source venv/bin/activate
-```
 
-### 4. Install Dependencies
-
-Install all the required Python packages from the `requirements.txt` file.
-
-```bash
+4. Install Dependencies
 pip install -r requirements.txt
-```
 
-
-
-### 5. Run the Application
-
-Once the dependencies are installed and the API key is configured, you can start the Flask server.
-
-```bash
+5. Run the Application
 python app.py
-```
 
-The backend server will start running on `http://127.0.0.1:5000`. Open this URL in your web browser to access the application.
 
-## 📂 Project Structure
+Then open http://127.0.0.1:5000
+ in your browser.
 
-```
-Rain Water Harvesting/
+📁 Project Structure
+Rainwise/
 ├── static/
 │   └── js/
 │       ├── index.js
@@ -121,8 +90,8 @@ Rain Water Harvesting/
 ├── app.py
 ├── recommendations.py
 ├── requirements.txt
-└── rtrwh_data.db (generated)
-```
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+📄 License
 
+This project is licensed under the MIT License — see the LICENSE
+ file for details.
