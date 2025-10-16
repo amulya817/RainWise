@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+Flask-Cors
+Flask-Login
+pandas
+fpdf2
+gunicorn==21.2.0
+bcrypt
+python-dotenv
