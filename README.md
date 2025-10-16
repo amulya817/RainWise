@@ -1,8 +1,8 @@
-🌧️ Rainwise — Rooftop Rainwater Harvesting (RTRWH) Assessment & Recommendation Engine
+Rainwise — Rooftop Rainwater Harvesting (RTRWH) Assessment & Recommendation Engine
 
 A comprehensive web application designed to assess the feasibility of rooftop rainwater harvesting for any given location. It provides detailed analysis, personalized recommendations, and information on government subsidies, helping users make sustainable water management decisions with ease.
 
-🌿 Key Features
+Key Features
 
 Interactive Location Selection
 Users can pinpoint their property using an interactive MapTiler map with both street and satellite views or use their device’s GPS.
@@ -32,14 +32,14 @@ Downloadable, professional-quality reports generated with FPDF2.
 Government Subsidy Checker
 Automatically checks eligibility for relevant national/state rainwater harvesting schemes.
 
-⚙️ Technology Stack
+ Technology Stack
 
 Backend: Python 3, Flask, SQLAlchemy, Pandas, FPDF2
 Frontend: HTML5, CSS3 (Tailwind CSS), JavaScript (ES6+)
 Mapping & Geocoding: MapLibre GL JS, MapTiler
 Data Visualization: Chart.js
 
-🚀 Setup and Installation
+Setup and Installation
 1. Prerequisites
 
 Python 3.8 or higher
@@ -47,7 +47,7 @@ Python 3.8 or higher
 pip (Python package installer)
 
 2. Clone the Repository
-git clone https://github.com/your-username/Rainwise.git
+git clone https://github.com/amulya817/Rainwise.git
 cd Rainwise
 
 3. Create a Virtual Environment
@@ -73,7 +73,7 @@ python app.py
 Then open http://127.0.0.1:5000
  in your browser.
 
-📁 Project Structure
+Project Structure
 Rainwise/
 ├── static/
 │   └── js/
